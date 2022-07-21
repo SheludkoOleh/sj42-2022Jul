@@ -7,6 +7,8 @@ function bonusTime(salary, bonus) {
 
 
 // https://www.codewars.com/kata/is-this-my-tail/train/javascript
+
+// це рішення не скорочував просто виправивфункцію як просили в умові 
 function correctTail(body, tail) {
   const sub = body.substr(body.length - tail.length);
 
