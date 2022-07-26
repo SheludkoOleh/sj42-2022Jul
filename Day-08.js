@@ -16,3 +16,26 @@ function whatNumberIsIt(n) {
       return "Input number is " + n;
   }
 }
+
+
+//https://www.codewars.com/kata/57238ceaef9008adc7000603/train/javascript
+// я написав код в рядок. Але чи вірно форматує прітєр його? 
+
+function colorOf(r, g, b) {
+  return (
+    "#" +
+    r.toString(16).padStart(2, 0) +
+    g.toString(16).padStart(2, 0) +
+    b.toString(16).padStart(2, 0)
+  );
+}
+
+
+
+//https://www.codewars.com/kata/57256064856584bc47000611/train/javascript
+function howManySmaller(arr, n) {
+  return arr.filter((x) => +x.toFixed(2) < n).length;
+}
+
+
+
