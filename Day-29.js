@@ -2,3 +2,17 @@
 
 let myObj = { __proto__: MyObject.prototype };
 MyObject.call(myObj);
+
+//https://www.codewars.com/kata/558cb3df5f511f40d500001d/train/javascript
+
+function nouveau(Constructor, ...arg) {
+  let instance = Object.create(Constructor.prototype);
+  let result = Constructor.bind(instance)(...arg);
+  if (
+    (typeof result === "object" || typeof result === "function") &&
+    result !== null
+  ) {
+    return result;
+  }
+  return instance;
+}
